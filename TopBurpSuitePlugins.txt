@@ -1,0 +1,88 @@
+🔥Top BurpSuite Plugins🔥
+
+Plugin 1 : H1 Report Finder 
+Usage: Finds public security reports published on Hackerone  
+Link of the repository : https://lnkd.in/evH2C45B 
+ 
+Plugin 2 : WordPress Scanner 
+Usage: Finds known vulnerabilities in WordPress plugins and themes 
+Link of the repository : https://lnkd.in/eee5p97Z 
+ 
+Plugin 3 : Pentest Mapper 
+Usage: Allows users to keep track of vulnerabilities and to map each flow to vulnerability with the custom checklist 
+Link of the repository : https://lnkd.in/euaMkEza 
+ 
+Plugin 4 : Autowasp 
+Usage: Integrates Burp issues logging, with OWASP Web Security Testing Guide (WSTG) 
+Link of the repository : https://lnkd.in/eax6v3_s 
+ 
+Plugin 5 : burp_bug_finder 
+Usage: Discovers XSS and error based SQLi without user intervention  
+Link of the repository : https://lnkd.in/eQWfgP6x 
+ 
+Plugin 6 : Auth Analyzer 
+Usage: Finds authorization bug, broken access control 
+Link of the repository : https://lnkd.in/ej3r5qqM 
+ 
+Plugin 7 : Active Scan ++ 
+Usage: Identifies application behavior that may be of interest to advanced testers 
+Link of the repository : https://lnkd.in/ek5wQd9B 
+ 
+Plugin 8 : NoSQL Scanner 
+Usage: Provides a way to discover NoSQL injection vulnerabilities. 
+Link of the repository : https://lnkd.in/ef_PycBs 
+ 
+Plugin 9 : Nuclei Burp Integration 
+Usage: Allows to run Nuclei Scanner directly from Burp and transforms JSON results into the issues 
+Link of the repository : https://lnkd.in/eumSKQZu 
+ 
+Plugin 10 : Wordlist Extractor   
+Usage: Scrapes all unique words and numbers for use with password cracking  
+Link of the repository : https://lnkd.in/eBkypXFn
+
+Plugin 11 : H1 Report Finder
+Usage: Finds public security reports published on Hackerone 
+Link of the repository : https://lnkd.in/evH2C45B
+
+Plugin 12 : WordPress Scanner
+Usage: Finds known vulnerabilities in WordPress plugins and themes
+Link of the repository : https://lnkd.in/eee5p97Z 
+
+Plugin 13 : Pentest Mapper
+Usage: Allows users to keep track of vulnerabilities and to map each flow to vulnerability with the custom checklist
+Link of the repository : https://lnkd.in/euaMkEza 
+
+Plugin 14 : Autowasp
+Usage: Integrates Burp issues logging, with OWASP Web Security Testing Guide (WSTG)
+Link of the repository : https://lnkd.in/eax6v3_s 
+
+Plugin 15 : burp_bug_finder
+Usage: Discovers XSS and error based SQLi without user intervention 
+Link of the repository : https://lnkd.in/eQWfgP6x
+	 	 	 	
+Plugin 16 : Auth Analyzer
+Usage: Finds authorization bug, broken access control
+Link of the repository : https://lnkd.in/ej3r5qqM 
+
+Plugin 17 : Active Scan ++
+Usage: Identifies application behavior that may be of interest to advanced testers
+Link of the repository : https://lnkd.in/ek5wQd9B 
+
+Plugin 18 : NoSQL Scanner
+Usage: Provides a way to discover NoSQL injection vulnerabilities.
+Link of the repository : https://lnkd.in/ef_PycBs 
+
+Plugin 19 : Nuclei Burp Integration
+Usage: Allows to run Nuclei Scanner directly from Burp and transforms JSON results into the issues
+Link of the repository : https://lnkd.in/eumSKQZu 
+
+Plugin 20 : Wordlist Extractor  
+Usage: Scrapes all unique words and numbers for use with password cracking 
+Link of the repository : https://lnkd.in/eBkypXFn
+
+Plugin 21: OpenAI - ReconAIzer
+https://github.com/hisxo/ReconAIzer
+
+Plugin 22: Dastardly - https://github.com/marketplace/actions/dastardly-scan-action?pk_campaign=dastardly
+
+Plugin 23: Burp-Dom-Scanner - Burp Suite's Extension To Scan And Crawl Single Page Applications - https://www.kitploit.com/2023/06/burp-dom-scanner-burp-suites-extension.html

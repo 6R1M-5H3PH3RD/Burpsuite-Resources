@@ -1,0 +1,94 @@
+{
+    "proxy": {
+        "intercept": "off",
+        "http_history": 25000,
+        "match_and_replace": [
+            {
+                "description": "Standardize User-Agent",
+                "match": "User-Agent:.*",
+                "replace": "User-Agent: BurpSuite Automated"
+            },
+            {
+                "description": "Add security token",
+                "match": "Authorization:.*",
+                "replace": "Authorization: Bearer <your_token_here>"
+            }
+        ]
+    },
+    "target": {
+        "scope": {
+            "include": [
+                {
+                    "host": "example.com",
+                    "port": 443,
+                    "protocol": "https"
+                }
+            ],
+            "exclude": [
+                {
+                    "host": "analytics.example.com",
+                    "port": 443,
+                    "protocol": "https"
+                },
+                {
+                    "file_extension": ["jpg", "png", "gif", "css", "js", "woff2", "ttf"]
+                }
+            ]
+        }
+    },
+    "spider": {
+        "form_submission": "never",
+        "crawl_limits": {
+            "max_link_depth": 20,
+            "max_crawl_time": 10800
+        },
+        "auto_spider": "in_scope"
+    },
+    "scanner": {
+        "live_passive_scanning": "on",
+        "live_active_scanning": "on",
+        "scan_speed": "fast",
+        "scan_accuracy": "maximum",
+        "throttle_requests": 3,
+        "issues_reported": "all",
+        "auto_scan": "in_scope"
+    },
+    "intruder": {
+        "payload_positions": [],
+        "payload_sets": [],
+        "attack_type": "sniper",
+        "auto_start_attack": "off"
+    },
+    "options": {
+        "display": {
+            "theme": "dark",
+            "font_size": 14
+        },
+        "connections": {
+            "timeout": 20000,
+            "follow_redirections": "always"
+        },
+        "ssl": {
+            "certificates": ["path/to/certificate.pem"],
+            "validate_host_certificate": "off"
+        },
+        "sessions": {
+            "handling_rules": []
+        }
+    },
+    "extensions": {
+        "loaded": ["Backslash Powered Scanner", "ActiveScan++", "Logger++", "Software Vulnerability Scanner", "Param Miner"],
+        "configurations": {
+            "Logger++": {
+                "log_level": "info"
+            },
+            "Software Vulnerability Scanner": {
+                "auto_update": "on"
+            },
+            "Param Miner": {
+                "guess_mime": "on",
+                "guess_json": "on"
+            }
+        }
+    }
+}

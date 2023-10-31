@@ -1,0 +1,97 @@
+{
+    "proxy": {
+        "intercept": "off",
+        "http_history": 20000,
+        "match_and_replace": [
+            {
+                "description": "Standardize User-Agent for consistency",
+                "match": "User-Agent:.*",
+                "replace": "User-Agent: BurpSuite Automated"
+            }
+        ]
+    },
+    "target": {
+        "scope": {
+            "include": [
+                {
+                    "host": "example.com",
+                    "port": 443,
+                    "protocol": "https"
+                }
+            ],
+            "exclude": [
+                {
+                    "host": "static.example.com",
+                    "port": 443,
+                    "protocol": "https"
+                },
+                {
+                    "file_extension": ["jpg", "png", "gif", "css", "js"]
+                }
+            ]
+        }
+    },
+    "spider": {
+        "form_submission": "never",
+        "request_headers": ["Authorization: Bearer <your_token_here>"],
+        "crawl_limits": {
+            "max_link_depth": 20,
+            "max_crawl_time": 10800
+        },
+        "auto_spider": "in_scope"
+    },
+    "scanner": {
+        "live_passive_scanning": "on",
+        "live_active_scanning": "on",
+        "scan_speed": "moderate",
+        "scan_accuracy": "maximum",
+        "throttle_requests": 3,
+        "issues_reported": "all",
+        "auto_scan": "in_scope"
+    },
+    "intruder": {
+        "payload_positions": [],
+        "payload_sets": [],
+        "attack_type": "sniper",
+        "auto_start_attack": "off"
+    },
+    "options": {
+        "display": {
+            "theme": "dark",
+            "font_size": 14
+        },
+        "connections": {
+            "timeout": 20000,
+            "follow_redirections": "always",
+            "upstream_proxy": {
+                "host": "127.0.0.1",
+                "port": 8080
+            }
+        },
+        "ssl": {
+            "certificates": ["path/to/certificate.pem"],
+            "validate_host_certificate": "off"
+        },
+        "sessions": {
+            "handling_rules": [
+                {
+                    "description": "Refresh token on 401 responses",
+                    "rule_action": "refresh_token",
+                    "trigger_on_response_code": 401
+                }
+            ]
+        }
+    },
+    "extensions": {
+        "loaded": ["Logger++", "Retire.js", "JWT4B", "Autorize"],
+        "configurations": {
+            "Logger++": {
+                "log_level": "debug"
+            },
+            "Autorize": {
+                "enforce_rate_limit": "on",
+                "detect_auth_bypass": "on"
+            }
+        }
+    }
+}
